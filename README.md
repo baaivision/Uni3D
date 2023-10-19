@@ -8,6 +8,10 @@
  
 [Paper](https://arxiv.org/abs/2310.06773)
 
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/uni3d-exploring-unified-3d-representation-at/zero-shot-3d-classification-on-objaverse-lvis)](https://paperswithcode.com/sota/zero-shot-3d-classification-on-objaverse-lvis?p=uni3d-exploring-unified-3d-representation-at)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/uni3d-exploring-unified-3d-representation-at/zero-shot-transfer-3d-point-cloud)](https://paperswithcode.com/sota/zero-shot-transfer-3d-point-cloud?p=uni3d-exploring-unified-3d-representation-at)
+[![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/uni3d-exploring-unified-3d-representation-at/zero-shot-transfer-3d-point-cloud-2)](https://paperswithcode.com/sota/zero-shot-transfer-3d-point-cloud-2?p=uni3d-exploring-unified-3d-representation-at)
+
 </div>
 
 
