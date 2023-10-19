@@ -1,0 +1,2 @@
+NAME: ModelNet40_openshape
+DATA_PATH: ./data/test_datasets/modelnet40

@@ -1,0 +1,7 @@
+ open-clip-torch
+ deepspeed
+ wandb 
+ open3d 
+ easydict 
+ h5py 
+ ninja

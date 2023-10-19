@@ -1,0 +1,3 @@
+NAME: Objaverse_lvis_openshape
+PC_PATH: ./data/test_datasets/objaverse_lvis/lvis_testset.txt
+PC_PATH_ROOT: ./data/test_datasets/objaverse_lvis

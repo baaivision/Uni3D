@@ -1,0 +1,8 @@
+**/__pycache__/*
+logs/*
+wandb/*
+*.pyc
+open_clip/*
+dsconfig/*
+.vscode/*
+dsconfig/*

@@ -1,0 +1,32 @@
+{
+    "ensembled_embedding": {
+        "config": "./data/Ensembled_embedding.yaml",
+        "train": "train",
+        "test": "train",
+        "usage": "train"
+    },  
+    "ensembled": {
+        "config": "./data/Ensembled.yaml",
+        "train": "train",
+        "test": "train",
+        "usage": "train"
+    },  
+    "objaverse_lvis_openshape": {
+        "config": "./data/Objaverse_lvis_openshape.yaml",
+        "train": "train",
+        "test": "test",
+        "usage": "test"
+    },
+    "modelnet40_openshape": {
+        "config": "./data/ModelNet40_openshape.yaml",
+        "train": "train",
+        "test": "test",
+        "usage": "test"
+    },
+    "scanobjnn_openshape": {
+        "config": "./data/ScanObjNN_openshape.yaml",
+        "train": "train",
+        "test": "test",
+        "usage": "test"
+    }
+}
