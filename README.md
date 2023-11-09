@@ -118,7 +118,7 @@ Uni3D is built using the awesome [EVA](https://github.com/baaivision/EVA), [Open
 ```bib
 @article{uni3d,
   title={Uni3D: Exploring Unified 3D Representation at Scale},
-  author={Junsheng Zhou, Jinsheng Wang, Baorui Ma, Yu-Shen Liu, Tiejun Huang, Xinlong Wang},
+  author={Zhou, Junsheng and Wang, Jinsheng and Ma, Baorui and Liu, Yu-Shen and Huang, Tiejun and Wang, Xinlong},
   journal={arXiv preprint arXiv:2310.06773},
   year={2023}
 }
