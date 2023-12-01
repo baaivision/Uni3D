@@ -12,6 +12,8 @@
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/uni3d-exploring-unified-3d-representation-at/zero-shot-transfer-3d-point-cloud)](https://paperswithcode.com/sota/zero-shot-transfer-3d-point-cloud?p=uni3d-exploring-unified-3d-representation-at)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/uni3d-exploring-unified-3d-representation-at/zero-shot-transfer-3d-point-cloud-2)](https://paperswithcode.com/sota/zero-shot-transfer-3d-point-cloud-2?p=uni3d-exploring-unified-3d-representation-at)
 
+We expand Uni3D into a 3D metric in the text-to-3D task for measuring semantic coherence, lifting the semantic measurement from 2D to 3D. Please refer to the [GeoDream code repository](https://github.com/baaivision/GeoDream).
+
 </div>
 
 
