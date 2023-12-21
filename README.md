@@ -12,7 +12,6 @@
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/uni3d-exploring-unified-3d-representation-at/zero-shot-transfer-3d-point-cloud)](https://paperswithcode.com/sota/zero-shot-transfer-3d-point-cloud?p=uni3d-exploring-unified-3d-representation-at)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/uni3d-exploring-unified-3d-representation-at/zero-shot-transfer-3d-point-cloud-2)](https://paperswithcode.com/sota/zero-shot-transfer-3d-point-cloud-2?p=uni3d-exploring-unified-3d-representation-at)
 
-We expand Uni3D into a 3D metric in the text-to-3D task for measuring semantic coherence, lifting the semantic measurement from 2D to 3D. Please refer to the [GeoDream code repository](https://github.com/baaivision/GeoDream).
 
 </div>
 
@@ -24,7 +23,19 @@ We expand Uni3D into a 3D metric in the text-to-3D task for measuring semantic c
 We present Uni3D, a unified and scalable 3D pretraining framework for large-scale 3D representation learning, and explore its limits at the scale of one billion parameters.
 Uni3D uses a 2D initialized ViT end-to-end pretrained to align the 3D point cloud features with the image-text aligned features. Via the simple architecture and pretext task, Uni3D can leverage abundant 2D pretrained models as initialization and image-text aligned models as the target, unlocking the great potential of 2D models and scaling-up strategies to the 3D world. We efficiently scale up Uni3D to one billion parameters, and set new records on a broad range of 3D tasks. 
 
+## Schedule
 
+We are committed to open-sourcing Uni3D related materials, including:
+
+- [x] Extended Uni3D to a 3D metric (Uni3D-score) for enhanced semantic coherence in text-to-3D tasks. For details, see [GeoDream code repository](https://github.com/baaivision/GeoDream).
+- [x] The weights of **Uni3D-giant**, **Uni3D-large**, **Uni3D-base**
+- [x] Evaluation code
+- [x] Evaluation data
+- [x] Pretraining code
+- [ ] Pretraining data
+
+
+We hope to foster the growth of our community through open-sourcing and promoting collaboration👬. Let's step towards multimodal intelligence together🍻.
 
 
 ## Installation
@@ -55,6 +66,10 @@ Core packages:
 
 | Model         | Training Data | Objaverse-LVIS Top1 (Top5) | ModelNet40 Top1 (Top5) | ScanObjectNN Top1 (Top5) |
 | :------:  | :------: | :------: |:------: |:------: |
+| [**Uni3d-B**](https://huggingface.co/BAAI/Uni3D/blob/main/modelzoo/uni3d-b-no-lvis/model.pt) | Ensembled w/o LVIS | 45.9 (74.8) | 86.1 (98.7) | 61.7 (89.5) | 
+| [**Uni3d-B**](https://huggingface.co/BAAI/Uni3D/blob/main/modelzoo/uni3d-b/model.pt) | Ensembled          | 51.7 (80.8) | 86.3 (97.9) | 63.8 (90.2) | 
+| [**Uni3d-L**](https://huggingface.co/BAAI/Uni3D/blob/main/modelzoo/uni3d-l-no-lvis/model.pt) | Ensembled w/o LVIS | 46.2 (74.7) | 86.6 (97.8) | 58.4 (90.1) | 
+| [**Uni3d-L**](https://huggingface.co/BAAI/Uni3D/blob/main/modelzoo/uni3d-l/model.pt) | Ensembled          | 53.1 (81.5) | 86.3 (98.3) | 58.2 (89.4) | 
 | [**Uni3d-g**](https://huggingface.co/BAAI/Uni3D/blob/main/modelzoo/uni3d-g-no-lvis/model.pt) | Ensembled w/o LVIS | 47.2 (76.1) | 86.8 (98.4) | 66.5 (90.1) | 
 | [**Uni3d-g**](https://huggingface.co/BAAI/Uni3D/blob/main/modelzoo/uni3d-g/model.pt) | Ensembled          | 53.5 (82.0) | 87.3 (99.2) | 63.9 (91.7) | 
 | [**Uni3d-g**](https://huggingface.co/BAAI/Uni3D/tree/main/modelzoo/uni3d-g) 🔥 | Ensembled          | 55.3 (82.9) | 88.2 (99.3) | 65.3 (92.7) |
@@ -65,7 +80,7 @@ We evaluate the zero-shot 3D classification performance on three datasets: Objav
 1. Please refer to [DATASETS.md](data/DATASETS.md) for evaluation dataset preparation.
 2. [Recommended 🤗] Download the [clip model](https://huggingface.co/timm/eva02_enormous_patch14_plus_clip_224.laion2b_s9b_b144k/blob/main/open_clip_pytorch_model.bin) and put it in `/path/to/clip_model` folder.
 3. Download model zoo weights and put them in `/path/to/checkpoints` folder.
-4. Run `bash scripts/inference.sh` to evaluate the model on the above datasets.
+4. Run `bash scripts/inference.sh [scale]` to evaluate the model on the above datasets, e.g., `bash scripts/inference.sh giant`.
 
 ## Pre-training
 1. Please refer to [DATASETS.md](data/DATASETS.md) for pre-train dataset preparation.
@@ -100,26 +115,14 @@ We evaluate the zero-shot 3D classification performance on three datasets: Objav
     <img src="assets/retrival.jpg" alt="retrival" width="800" />
 </p>
 
-## Schedule
 
-We are committed to open-sourcing Uni3D related materials, including:
-
-- [x] The weights of **Uni3D-g**
-- [x] Evaluation code
-- [x] Evaluation data
-- [x] Pretraining code
-- [ ] Pretraining data
-
-
-We hope to foster the growth of our community through open-sourcing and promoting collaboration👬. Let's step towards multimodal intelligence together🍻.
 ## Acknowledgement
 Uni3D is built using the awesome [EVA](https://github.com/baaivision/EVA), [OpenCLIP](https://github.com/mlfoundations/open_clip), [timm](https://github.com/huggingface/pytorch-image-models/), [DeepSpeed](https://github.com/microsoft/DeepSpeed), [ULIP](https://github.com/salesforce/ULIP) and [OpenShape](https://github.com/Colin97/OpenShape_code). 
 
-
 ## Citation
 ```bib
-@article{uni3d,
-  title={Uni3D: Exploring Unified 3D Representation at Scale},
+@article{zhou2023uni3d,
+  title={Uni3d: Exploring unified 3d representation at scale},
   author={Zhou, Junsheng and Wang, Jinsheng and Ma, Baorui and Liu, Yu-Shen and Huang, Tiejun and Wang, Xinlong},
   journal={arXiv preprint arXiv:2310.06773},
   year={2023}
