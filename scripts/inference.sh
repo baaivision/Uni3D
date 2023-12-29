@@ -5,14 +5,21 @@ clip_model="EVA02-E-14-plus"
 pretrained="/path/to/clip_model/open_clip_pytorch_model.bin" # or  "laion2b_s9b_b144k"  
 
 if [ "$1" = "giant" ]; then
-    pc_model="eva_giant_patch14_560.m30m_ft_in22k_in1k"
+    pc_model="eva_giant_patch14_560"
     pc_feat_dim=1408
 elif [ "$1" = "large" ]; then
-    pc_model="eva02_large_patch14_448.mim_m38m_ft_in22k_in1k"
+    pc_model="eva02_large_patch14_448"
     pc_feat_dim=1024
 elif [ "$1" = "base" ]; then
-    pc_model="eva02_base_patch14_448.mim_in22k_ft_in22k_in1k"
+    # pc_model="eva02_base_patch14_448.mim_in22k_ft_in22k_in1k"
+    pc_model="eva02_base_patch14_448"
     pc_feat_dim=768
+elif [ "$1" = "small" ]; then
+    pc_model="eva02_small_patch14_224"
+    pc_feat_dim=384
+elif [ "$1" = "tiny" ]; then
+    pc_model="eva02_tiny_patch14_224"
+    pc_feat_dim=192
 else
     echo "Invalid option"
     exit 1
@@ -30,7 +37,7 @@ torchrun --nproc-per-node=1 main.py \
     --clip-model $clip_model \
     --pretrained $pretrained \
     --pc-model $pc_model \
-    --pc-feat-dim 1408 \
+    --pc-feat-dim $pc_feat_dim \
     --embed-dim 1024 \
     --validate_dataset_name modelnet40_openshape \
     --validate_dataset_name_lvis objaverse_lvis_openshape \
