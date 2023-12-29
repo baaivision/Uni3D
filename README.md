@@ -28,7 +28,7 @@ Uni3D uses a 2D initialized ViT end-to-end pretrained to align the 3D point clou
 We are committed to open-sourcing Uni3D related materials, including:
 
 - [x] Extended Uni3D to a 3D metric (Uni3D-score) for enhanced semantic coherence in text-to-3D tasks. For details, see [GeoDream](https://github.com/baaivision/GeoDream).
-- [x] The weights of **Uni3D-giant**, **Uni3D-large**, **Uni3D-base**
+- [x] The weights of models range from 6M to **1B** parameters.
 - [x] Evaluation code
 - [x] Evaluation data
 - [x] Pretraining code
