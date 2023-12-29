@@ -11,7 +11,6 @@ elif [ "$1" = "large" ]; then
     pc_model="eva02_large_patch14_448"
     pc_feat_dim=1024
 elif [ "$1" = "base" ]; then
-    # pc_model="eva02_base_patch14_448.mim_in22k_ft_in22k_in1k"
     pc_model="eva02_base_patch14_448"
     pc_feat_dim=768
 elif [ "$1" = "small" ]; then
