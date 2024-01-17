@@ -6,7 +6,7 @@
  
 <sup>1</sup>[BAAI](https://www.baai.ac.cn/english.html), <sup>2</sup>[THU](https://www.tsinghua.edu.cn/en/), <sup>3</sup>[PKU](https://english.pku.edu.cn/) <br><sup>*</sup> Equal Contribution
  
-[Paper](https://arxiv.org/abs/2310.06773)
+ICLR 2024 (Spotlight)
 
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/uni3d-exploring-unified-3d-representation-at/zero-shot-3d-classification-on-objaverse-lvis)](https://paperswithcode.com/sota/zero-shot-3d-classification-on-objaverse-lvis?p=uni3d-exploring-unified-3d-representation-at)
 [![PWC](https://img.shields.io/endpoint.svg?url=https://paperswithcode.com/badge/uni3d-exploring-unified-3d-representation-at/zero-shot-transfer-3d-point-cloud)](https://paperswithcode.com/sota/zero-shot-transfer-3d-point-cloud?p=uni3d-exploring-unified-3d-representation-at)
@@ -121,10 +121,10 @@ Uni3D is built using the awesome [EVA](https://github.com/baaivision/EVA), [Open
 
 ## Citation
 ```bib
-@article{zhou2023uni3d,
+@inproceedings{zhou2023uni3d,
   title={Uni3d: Exploring unified 3d representation at scale},
   author={Zhou, Junsheng and Wang, Jinsheng and Ma, Baorui and Liu, Yu-Shen and Huang, Tiejun and Wang, Xinlong},
-  journal={arXiv preprint arXiv:2310.06773},
-  year={2023}
+  booktitle={International Conference on Learning Representations (ICLR)},
+  year={2024}
 }
 ```
