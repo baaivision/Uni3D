@@ -119,6 +119,10 @@ We evaluate the zero-shot 3D classification performance on three datasets: Objav
 ## Acknowledgement
 Uni3D is built using the awesome [EVA](https://github.com/baaivision/EVA), [OpenCLIP](https://github.com/mlfoundations/open_clip), [timm](https://github.com/huggingface/pytorch-image-models/), [DeepSpeed](https://github.com/microsoft/DeepSpeed), [ULIP](https://github.com/salesforce/ULIP) and [OpenShape](https://github.com/Colin97/OpenShape_code). 
 
+This work is supported by the National Science and Technology Major Project (No. 2022ZD0116314).
+
+本项目受新一代人工智能国家科技重大专项（No. 2022ZD0116314）支持。
+
 ## Citation
 ```bib
 @inproceedings{zhou2023uni3d,
