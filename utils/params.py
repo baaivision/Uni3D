@@ -264,7 +264,7 @@ def parse_args(args):
     parser.add_argument('--pretrain_dataset_name', default='shapenet', type=str)
     parser.add_argument('--pretrain_dataset_prompt', default='shapenet_64', type=str)
     parser.add_argument('--validate_dataset_name', default='modelnet40', type=str)
-    parser.add_argument('--validate_dataset_name_lvis', default='objaverse_lvis', type=str)
+    parser.add_argument('--validate_dataset_name_lvis', default='objaverse_lvis_openshape', type=str)
     parser.add_argument('--validate_dataset_name_scanobjnn', default='scanobjnn_openshape', type=str)
     parser.add_argument('--validate_dataset_prompt', default='modelnet40_64', type=str)
     parser.add_argument('--openshape_setting', action='store_true', default=False, help='whether to use osaug, by default enabled with openshape.')
